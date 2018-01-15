@@ -14,12 +14,32 @@ SPEED = 5
 #TODO add interface of some kind
 
 #field is 360" x 888"
-#field perimeter 264"
+#field mid end 264"
 #angles
+
+screen.screensize(1000, 500)
 def drawField(turt, startX, startY):
     turt.penup()
-    turt.left(90)
-    turt.
+    turt.forward(500)
+    turt.right(90)
+
+    turt.pendown()
+
+    #outside carpet
+    turt.forward(180)
+    turt.right(90)
+    turt.forward(888)
+    turt.right(90)
+    turt.forward(360)
+    turt.right(90)
+    turt.forward(888)
+    turt.right(90)
+    turt.forward(180)
+
+    turt.penup()
+
+    #outside field wall
+
 
 def moveRobot(turt, leftSpeed, rightSpeed):
     if(leftSpeed != rightSpeed):
@@ -45,6 +65,8 @@ def moveRobot(turt, leftSpeed, rightSpeed):
         return mid
     else:
         turt.forward(SPEED)
+
+drawField(t, 0, 0)
 
 while(True):
     moveRobot(t, 75, 100)
