@@ -17,6 +17,8 @@ SPEED = 5
 #field mid end 264"
 #angles
 
+#324 x 648
+
 screen.screensize(1000, 500)
 def drawField(turt, startX, startY):
     turt.penup()
@@ -36,7 +38,59 @@ def drawField(turt, startX, startY):
     turt.right(90)
     turt.forward(180)
 
+
     turt.penup()
+    turt.right(90)
+    turt.forward(120)
+    turt.left(90)
+    turt.pendown()
+
+    turt.forward(162)
+    turt.right(90)
+    turt.forward(648)
+    turt.right(90)
+    turt.forward(324)
+    turt.right(90)
+    turt.forward(648)
+    turt.right(90)
+    turt.forward(162)
+
+    turt.penup()
+    turt.right(90)
+    turt.forward(140)
+    turt.pendown()
+
+    #first switch
+    turt.left(90)
+    turt.forward(76.75)
+    turt.right(90)
+    turt.forward(56)
+    turt.right(90)
+    turt.forward(153.5)
+    turt.right(90)
+    turt.forward(56)
+    turt.right(90)
+    turt.forward(76.75)
+
+    #plates
+    turt.forward(36)
+    turt.right(90)
+    turt.forward(56)
+    turt.right(90)
+    turt.forward(72)
+    turt.right(90)
+    turt.forward(56)
+    turt.right(90)
+    turt.forward(36)
+
+    turt.penup()
+    turt.forward(159.5)
+    turt.pendown()
+
+    #scale
+
+
+
 
     #outside field wall
 
